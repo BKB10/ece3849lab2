@@ -128,10 +128,6 @@ void DrawBar(int x, int yTop, int yBottom, float level, bool vertical)
 // ============================================================================
 void ScreenMic_Draw()
 {
-    tRectangle bg = {0, 21, 127, 127};
-    GrContextForegroundSet(&gContext, ClrBlack);
-    GrRectFill(&gContext, &bg);
-
     float level = Mic_Level();
     DrawBar(58, 25, 120, level, true);
 
